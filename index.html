@@ -8,6 +8,20 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Bootstrap</title>
 </head>
+<style>
+    .dynamic-switch {
+        background-color: #DC3545;
+        border-color: #DC3545;
+        transition: background-color 0.4ms ease;
+        height: 24px !important;
+        width: 48px !important;
+    }
+
+    .dynamic-switch:checked {
+        background-color: #24c63f;
+        border-color: #198754;
+    }
+</style>
 
 <body>
     <!--Barra de navegación-->
@@ -34,9 +48,12 @@
                 <form class="d-flex" role="search">
                     <button class="btn btn-outline-danger text-center" type="submit">
                         Salir
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-                            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
                         </svg>
                     </button>
                 </form>
@@ -53,10 +70,14 @@
                 <!-- Button trigger modal guardar-->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Agregar
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-plus" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7"/>
-                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
-                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7" />
+                        <path
+                            d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z" />
+                        <path
+                            d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z" />
                     </svg>
                 </button>
 
@@ -65,60 +86,72 @@
         </div>
         <!--Tabla de usuarios-->
         <div class="row">
-            <table class="table table-hover table-bordered table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col" class="text-center">#</th>
-                        <th scope="col">Nickname</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Roles</th>
-                        <th scope="col">Estado</th>
-                        <th scope="col">Editar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row" class="text-center">1</th>
-                        <td>VictorAriz</td>
-                        <td>Víctor Manuel Arizmendi Salgado</td>
-                        <td>ADMIN, VENTANA</td>
-                        <td>
-                            <div class="form-check form-switch justify-content-center d-flex">
-                                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                            </div>
-                        </td>
-                        <td class="text-center">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">
-                                Editar
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-center">2</th>
-                        <td>Alexxito</td>
-                        <td>Jaime Alejandro Rodríguez</td>
-                        <td>CLIENTE</td>
-                        <td>
-                            <div class="form-check form-switch justify-content-center d-flex">
-                                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                            </div>
-                        </td>
-                        <td class="text-center">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal2">
-                                Editar
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                </svg>
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">#</th>
+                            <th scope="col">Nickname</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Roles</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-center">1</th>
+                            <td>VictorAriz</td>
+                            <td>Víctor Manuel Arizmendi Salgado</td>
+                            <td>ADMIN, VENTANA</td>
+                            <td>
+                                <div class="form-check form-switch justify-content-center d-flex">
+                                    <input class="form-check-input dynamic-switch" type="checkbox" role="switch"
+                                        id="switchCheckChecked" checked>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#editModal">
+                                    Editar
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd"
+                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-center">2</th>
+                            <td>Alexxito</td>
+                            <td>Jaime Alejandro Rodríguez</td>
+                            <td>CLIENTE</td>
+                            <td>
+                                <div class="form-check form-switch justify-content-center d-flex">
+                                    <input class="form-check-input dynamic-switch" type="checkbox" role="switch"
+                                        id="switchCheckChecked2" checked>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#editModal2">
+                                    Editar
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                        <path fill-rule="evenodd"
+                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <!--Paginador-->
         <div class="row">
@@ -153,11 +186,13 @@
                     <form action="" class="form">
                         <p>
                             <label for="inputEditNickname" class="form-label">Nickname:</label>
-                            <input class="form-control" type="text" name="inputNickname" id="inputEditNickname" value="VictorAriz">
+                            <input class="form-control" type="text" name="inputNickname" id="inputEditNickname"
+                                value="VictorAriz">
                         </p>
                         <p>
                             <label for="inputEditName" class="form-label">Nombre completo:</label>
-                            <input class="form-control" type="text" name="inputName" id="inputEditName" value="Víctor Manuel Arizmendi Salgado">
+                            <input class="form-control" type="text" name="inputName" id="inputEditName"
+                                value="Víctor Manuel Arizmendi Salgado">
                         </p>
                         <p>
                             <label for="selectEditRol" class="form-label">Roles:</label>
@@ -189,11 +224,13 @@
                     <form action="" class="form">
                         <p>
                             <label for="inputEditNickname2" class="form-label">Nickname:</label>
-                            <input class="form-control" type="text" name="inputNickname" id="inputEditNickname2" value="Alexxito">
+                            <input class="form-control" type="text" name="inputNickname" id="inputEditNickname2"
+                                value="Alexxito">
                         </p>
                         <p>
                             <label for="inputEditName2" class="form-label">Nombre completo:</label>
-                            <input class="form-control" type="text" name="inputName" id="inputEditName2" value="Jaime Alejandro Rodríguez Reyes">
+                            <input class="form-control" type="text" name="inputName" id="inputEditName2"
+                                value="Jaime Alejandro Rodríguez Reyes">
                         </p>
                         <p>
                             <label for="selectEditRol2" class="form-label">Roles:</label>
